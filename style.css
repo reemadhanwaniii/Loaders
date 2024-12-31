@@ -23,6 +23,23 @@ html {
     animation-direction: reverse;
 }
 
+.loader2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.loader2 > div {
+    border: 5px solid red;
+    height: 4rem;
+    width: 4rem;
+    border-top: 5px solid #f0eeeb;
+    border-bottom: 5px solid #f0eeeb;
+    border-radius: 50%;
+    animation: spinner2 2s linear infinite;
+}
+
 @keyframes spinner {
     from {
         transform: rotate(0);
@@ -31,3 +48,13 @@ html {
         transform: rotate(360deg);
     }
 }
+
+@keyframes spinner2 {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
