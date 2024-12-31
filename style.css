@@ -103,3 +103,58 @@ html {
         height: 100px;
     }
 }
+
+.loader4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.loader4 > div {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid rgb(52, 139, 216);
+    border-radius: 50%;
+    animation: drop 2s linear infinite;
+}
+
+@keyframes drop {
+    0% { 
+        transform: scale(1,1);
+        border-color: grey;
+        opacity: 1;
+    }
+    15% {
+        opacity: 0;
+    }
+    25% {
+        transform: scale(1.5,1.5);
+        border-color: #e8e6e3;
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(2,2);
+        border-color: #f7f6f5;
+        opacity: 1;
+    }
+    65%{
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+        border-color: #fcfbfa;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1,1);
+        border-color: grey;
+        opacity: 1;
+    }
+}
